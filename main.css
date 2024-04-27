@@ -1,0 +1,49 @@
+@import url(styles/reset.css);
+@import url(styles/header.css);
+@import url(styles/profile.css);
+@import url(styles/about.css);
+@import url(styles/skills.css);
+@import url(styles/hobbies.css);
+@import url(styles/academic.css);
+@import url(styles/experience.css);
+@import url(styles/contacto.css);
+
+
+body {
+    box-sizing: border-box;
+    background-color: #EEEEEE; ;
+    font-family: 'Raleway';
+    /*Espacio entre renglones (Sangria)*/
+    line-height: 1;
+    color: #464646;
+    /* El scroll solo funciona en el eje y (Desaparece el scrool en el eje x)*/
+    overflow-x: hidden;
+    
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    background: white;
+    padding: 35px;
+}
+
+.footer__img {
+    width: 100px;
+}
+
+.footer__rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.footer__rodape p {
+    padding: 5px;
+}

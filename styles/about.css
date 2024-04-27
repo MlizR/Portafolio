@@ -1,0 +1,27 @@
+.about {
+    background: #EAF2FD;
+    padding: 32px;
+    margin: 0 0 10px 0;
+}
+
+.about__title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 0 0 20px 0;
+}
+
+.about__paragraph {
+    margin: 0 0 1em;
+    font-size: 16px;
+}
+
+.firma {
+    width: 100px;
+    height: auto;
+}
+@media (min-width: 1024px) {
+    .about__container {
+        padding: 0 420px 0 4em;
+    }
+
+}

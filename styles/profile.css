@@ -1,0 +1,79 @@
+.title__div{
+    background: white;
+    padding: 0 32px;
+
+}
+.foto__profile{
+    height: 120px;
+    padding: 20px 0;
+    border-radius: 100%;
+}
+
+.title__bio {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title__subsection{
+    font-weight: 14px;
+    padding: 16px 0;
+}
+
+.title__network{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-weight: bold;
+    padding: 0 0 10px 0;
+
+}
+
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+    .title__div{
+        display: flex;
+        padding: 0 6em;
+        align-items: center;
+        flex-direction: row-reverse; /* Cambia el orden de los hijos a la inversa */
+    }
+
+    .foto__profile{
+        width: 368px;
+        height: auto;
+    }
+    .title__bio {
+        font-size: 52px;
+    }
+    .title__subsection{
+        font-size: 22px;
+    }
+    .title__network {
+        
+        justify-content: flex-start;
+        gap: 35px;
+        margin: 20px 0;
+
+    }
+    
+
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px){
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .title__container {
+        flex: 1; /* Permite que el contenedor del texto ocupe el espacio restante */
+        margin: 32px 20px 0 0;
+    }
+
+    .foto__profile {
+        width: 146px; /* Ajusta el ancho de la imagen según tus necesidades */
+        height: auto; /* Mantiene la proporción de la imagen */
+        
+    }
+}

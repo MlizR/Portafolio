@@ -1,0 +1,113 @@
+.experience {
+    padding: 0 40px;
+}
+
+.experiencie__box {
+    align-content: center;
+    
+}
+.experience__section__title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 32px;
+}
+
+.experience__img{
+    width: 296px;
+    height: auto;
+
+}
+
+.experience__title {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.experience__text {
+    font-size: 14px;
+    padding: 0 0 10px 0;
+}
+
+.experience__description {
+    padding: 10px 0 60px 0;
+}
+
+.repo__button {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    color: #2A7AE4;
+    padding: 10px;
+    border: 2px solid; 
+    cursor: pointer;
+    /*Proporciona una trancisión visual de un elemento*/
+    transition: 1s all;
+
+}
+
+.repo__button:hover,
+.demo__button:hover {
+    /*Aumenta el tamaño de un elemnto*/
+    transform: scale(1.2);
+}
+
+.demo__button {
+    height: 39.2px;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+    background-color: #2A7AE4;
+    cursor: pointer;
+    /*Proporciona una trancisión visual de un elemento*/
+    transition: 1s all;
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1023px){
+    .experience__img {
+        width: 700px;
+        height: auto;
+    }
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px){
+    .experiencie__box {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .experiencie__box:hover {
+        transition: 0.5s;
+        transform: scale(1.05);
+    }
+
+    .experiencie__box:nth-child(3) {
+        flex-direction: row-reverse;
+    }
+
+    .experience__img{
+        width: 752px;
+        height: auto;
+        margin-right: 40px;
+    }
+
+    .experience__info {
+        /* Permite que el contenido se expanda y ocupe el espacio restante */
+        flex-grow: 1;
+        display: flex;
+        /* Alineamos los elementos de forma vertical */
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 10px
+    }
+
+    .experience__description {
+        display: flex; /* Utilizamos flexbox para alinear los botones horizontalmente */
+        gap: 10px; /* Espacio entre los botones */
+    }
+
+}
+
